@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html xml:lang="ru" lang="ru">
+  <head>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRJS-52f0838caf72ff5fb85","applicationID":"549684288","transactionName":"d19fEBAMXQ8GQhlHVFlAXQUWBkJMEFhZRA==","queueTime":0,"applicationTime":154,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-52f0838caf72ff5fb85",applicationID:"549684288"};;(()=>{var e,t,r={9071:(e,t,r)=>{"use strict";r.d(t,{I:()=>n});var n=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(n=+i[1])},6562:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>p,C5:()=>d,DL:()=>y,OP:()=>N,lF:()=>M,Yu:()=>A,Dg:()=>h,CX:()=>f,GE:()=>w,sU:()=>R});var n={};r.r(n),r.d(n,{agent:()=>E,match:()=>D,version:()=>x});var i=r(6797),o=r(909),a=r(8610);class s{constructor(e,t){try{if(!e||"object"!=typeof e)return(0,a.Z)("New setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,a.Z)("Setting a Configurable requires a model to set its initial properties");Object.assign(this,t),Object.entries(e).forEach((e=>{let[t,r]=e;const n=(0,o.q)(t);n.length&&r&&"object"==typeof r&&n.forEach((e=>{e in r&&((0,a.Z)('"'.concat(e,'" is a protected attribute and can not be changed in feature ').concat(t,".  It will have no effect.")),delete r[e])})),this[t]=r}))}catch(e){(0,a.Z)("An error occured while setting a Configurable",e)}}}const c={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},u={};function d(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!u[e])throw new Error("Info for ".concat(e," was never set"));return u[e]}function f(e,t){if(!e)throw new Error("All info objects require an agent identifier!");u[e]=new s(t,c),(0,i.Qy)(e,u[e],"info")}const l={allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},spa:{enabled:!0,harvestTimeSeconds:10}},g={};function v(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function h(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");g[e]=new s(t,l),(0,i.Qy)(e,g[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},b={};function y(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!b[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return b[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");b[e]=new s(t,m),(0,i.Qy)(e,b[e],"loader_config")}const A=(0,i.mF)().o;var E=null,x=null;if(navigator.userAgent){var T=navigator.userAgent,_=T.match(/Version\/(\S+)\s+Safari/);_&&-1===T.indexOf("Chrome")&&-1===T.indexOf("Chromium")&&(E="Safari",x=_[1])}function D(e,t){if(!E)return!1;if(e!==E)return!1;if(!t)return!0;if(!x)return!1;for(var r=x.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var j=r(5526),P=r(2374);const k="NRBA_SESSION_ID";function O(){if(!P.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(k))&&(e=(0,j.ky)(16),window.sessionStorage.setItem(k,e)),e}catch(e){return null}}var S=r(8226);const I=e=>({customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(P._A?.performance?.timeOrigin||P._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+P._A.location,ptid:void 0,releaseIds:{},sessionId:1==p(e,"privacy.cookies_enabled")?O():null,xhrWrappable:"function"==typeof P._A.XMLHttpRequest?.prototype?.addEventListener,userAgent:n,version:S.q}),C={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!C[e])throw new Error("Runtime for ".concat(e," was never set"));return C[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");C[e]=new s(t,I(e)),(0,i.Qy)(e,C[e],"runtime")}function M(e){return function(e){try{const t=d(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},8226:(e,t,r)=>{"use strict";r.d(t,{q:()=>n});const n="1228.PROD"},9557:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(8610);const i={agentIdentifier:""};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(3752),i=r(7022),o=r(4045),a=r(2325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=Array.from(s[e]);function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)f(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function f(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,r)=>{"use strict";r.d(t,{ee:()=>u});var n=r(6797),i=r(3916),o=r(7022),a=r(6562),s="nr@context";let c=(0,n.fP)();var u;function d(){}function f(){return new d}function l(){u.aborted=!0,u.backlog={}}c.ee?u=c.ee:(u=function e(t,r){var n={},c={},g={},v=!1;try{v=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:p,buffer:E,abort:l,aborted:!1,isBuffering:x,debugId:r,backlog:v?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof d?e:e?(0,i.X)(e,s,f):f()}function m(e,r,n,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,r,n);for(var a=p(n),s=w(e),d=s.length,f=0;f<d;f++)s[f].apply(a,r);var l=T()[c[e]];return l&&l.push([h,e,r,a]),a}}function b(e,t){n[e]=w(e).concat(t)}function y(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function w(e){return n[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function E(e,t){var r=T();h.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function x(e){return!!T()[c[e]]}function T(){return h.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(3752).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4045:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(9252);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},8544:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(2374);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},5526:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>i,ky:()=>o});var n=r(2374);function i(){var e=null,t=0,r=n._A?.crypto||n._A?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",s="",c=0;c<a.length;c++)s+="x"===(o=a[c])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return s}function o(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},2053:(e,t,r)=>{"use strict";r.d(t,{B:()=>n,z:()=>i});const n=(new Date).getTime();function i(){return Math.round(performance.now())}},8283:(e,t,r)=>{"use strict";r.d(t,{B:()=>a,L:()=>s});var n=r(6562),i=r(2053),o={};function a(e,t,r){void 0===r&&(r=(0,i.z)()+(0,n.OP)(e).offset),o[e]=o[e]||{},o[e][t]=r}function s(e,t,r,n){const i=e.sharedContext.agentIdentifier;var a=o[i]?.[r],s=o[i]?.[n];void 0!==a&&void 0!==s&&e.store("measures",t,{value:s-a})}},2545:(e,t,r)=>{"use strict";r.d(t,{L:()=>c});var n=r(9071),i=r(8544),o=r(8305),a=r(2374),s=r(6998);if(a.v6){a._A.cleanupTasks=[];const e=a._A.close;a._A.close=()=>{for(let e of a._A.cleanupTasks)e();e()}}function c(e,t){if(a.il)if(t)(0,s.N)(e,!0),(0,i.bP)("pagehide",e);else{var r=(0,o.Z)(e);!n.I||navigator.sendBeacon?(0,i.bP)("pagehide",r):(0,i.bP)("beforeunload",r),(0,i.bP)("unload",r)}else a.v6&&a._A.cleanupTasks.push(e)}},8610:(e,t,r)=>{"use strict";function n(e,t){console&&console.warn&&"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},3916:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,r)=>{"use strict";r.d(t,{_A:()=>o,il:()=>n,lW:()=>a,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".')})();function a(){return o}},7022:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},8305:(e,t,r)=>{"use strict";r.d(t,{Z:()=>o});var n=r(8683),i=r.n(n);function o(e){var t,r=!1;return function(){return r?t:(r=!0,t=e.apply(this,i()(arguments)))}}},2438:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(3752);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},2650:(e,t,r)=>{"use strict";r.d(t,{K:()=>a,b:()=>o});var n=r(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},6797:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(2053),i=r(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,r)=>{"use strict";r.d(t,{N:()=>i,e:()=>o});var n=r(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",(function(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}))}function o(){return"hidden"===document.visibilityState?-1:1/0}},6034:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(2325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},2484:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewEvent},6382:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewTiming},1509:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6562),i=r(3752),o=r(2384),a=r(6797);class s{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1,this.checkConfiguration()}checkConfiguration(){if(!(0,n.lF)(this.agentIdentifier)){let e={...(0,a.gG)().info?.jsAttributes};try{e={...e,...(0,n.C5)(this.agentIdentifier)?.jsAttributes}}catch(e){}(0,o.j)(this.agentIdentifier,{...(0,a.gG)(),info:{...(0,a.gG)().info,jsAttributes:e}})}}}},2384:(e,t,r)=>{"use strict";r.d(t,{j:()=>w});var n=r(8683),i=r.n(n),o=r(2325),a=r(6562),s=r(9252),c=r(7022),u=r(3752),d=r(2053),f=r(4329),l=r(2650),g=r(2374),v=r(8610),h=r(6034);function p(e){["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&e.api[t](...n)}))}(t,...n)}}))}var m=r(6797);const b={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa]};const y={};function w(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2?arguments[2]:void 0,w=arguments.length>3?arguments[3]:void 0,{init:A,info:E,loader_config:x,runtime:T={loaderType:n},exposed:_=!0}=t;const D=(0,m.gG)();let j={};return E||(A=D.init,E=D.info,x=D.loader_config,j=D),g.v6&&(E.jsAttributes={...E.jsAttributes,isWorker:!0}),(0,a.CX)(e,E),(0,a.Dg)(e,A||{}),(0,a.GE)(e,x||{}),(0,a.sU)(e,T),function(e,t,n){n||(0,f.R)(e,"api"),p(t);var m=u.ee.get(e),b=m.get("tracer"),y="api-",w=y+"ixn-";function A(){}(0,c.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,r){t[r]=x(y,r,!0,"api")})),t.addPageAction=x(y,"addPageAction",!0,o.D.pageAction),t.setCurrentRouteName=x(y,"routeName",!0,o.D.spa),t.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,a.OP)(e).customTransaction=(r||"http://custom.transaction")+t,x(y,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,r){const n=(0,a.C5)(e);return(0,a.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),x(y,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new A).get()};var E=A.prototype={createTracer:function(e,t){var r={},n=this,i="function"==typeof t;return(0,s.p)(w+"tracer",[(0,d.z)(),e,r],n,o.D.spa,m),function(){if(b.emit((i?"":"no-")+"fn-start",[(0,d.z)(),n,i],r),i)try{return t.apply(this,arguments)}catch(e){throw b.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],r),e}finally{b.emit("fn-end",[(0,d.z)()],r)}}}};function x(e,t,r,n){return function(){return(0,s.p)(h.xS,["API/"+t+"/called"],void 0,o.D.metrics,m),(0,s.p)(e+t,[(0,d.z)()].concat(i()(arguments)),r?null:this,n,m),r?void 0:this}}function T(){r.e(439).then(r.bind(r,5692)).then((t=>{let{setAPI:r}=t;r(e),(0,f.L)(e,"api")})).catch((()=>(0,v.Z)("Downloading runtime APIs failed...")))}(0,c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){E[t]=x(w,t,void 0,o.D.spa)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,s.p)(h.xS,["API/noticeError/called"],void 0,o.D.metrics,m),(0,s.p)("err",[e,(0,d.z)(),!1,t],void 0,o.D.jserrors,m)},g.v6?T():(0,l.b)((()=>T()),!0)}(e,j,w),(0,m.Qy)(e,D,"api"),(0,m.Qy)(e,_,"exposed"),(0,m.EZ)("activatedFeatures",y),(0,m.EZ)("setToken",(t=>function(e,t){var r=u.ee.get(t);e&&"object"==typeof e&&((0,c.D)(e,(function(e,t){if(!t)return(b[e]||[]).forEach((t=>{(0,s.p)("block-"+e,[],void 0,t,r)}));y[e]||((0,s.p)("feat-"+e,[],void 0,b[e],r),y[e]=!0)})),(0,f.L)(t,o.D.pageViewEvent))}(t,e))),j}},909:(e,t,r)=>{"use strict";r.d(t,{Z:()=>i,q:()=>o});var n=r(2325);function i(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}function o(e){return e===n.D.jserrors?[]:["auto"]}},2325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8}},8683:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return i.d(t,{a:t}),t},i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",317:"jserrors-aggregate",348:"page_view_timing-aggregate",439:"async-api",729:"lazy-loader",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"1ef08094",147:"56d9a464",193:"ada8b15b",317:"64f61365",348:"ced8c919",439:"61caf4d9",729:"37550b27",786:"46b69e61",862:"e74e95d2",873:"7222cbb6",898:"e6085a9a"}[e]+"-1228.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var f=u[d];if(f.getAttribute("src")==r||f.getAttribute("data-webpack")==t+o){s=f;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var l=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(l.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=l.bind(null,s.onerror),s.onload=l.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={653:0,227:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{"use strict";i.r(o);var e=i(2325),t=i(6562);const r=Object.values(e.D);function n(e){const n={};return r.forEach((r=>{n[r]=function(e,r){return!1!==(0,t.Mt)(r,"".concat(e,".enabled"))}(r,e)})),n}var a=i(2384),s=i(909),c=i(9252),u=i(2053),d=i(8283),f=i(4329),l=i(1509),g=i(2650),v=i(2374),h=i(8610);class p extends l.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.hasAggregator=!1,this.auto=n,this.abortHandler,n&&(0,f.R)(e,r)}importAggregator(){if(this.hasAggregator||!this.auto)return;this.hasAggregator=!0;const e=async()=>{try{const{lazyLoader:e}=await i.e(729).then(i.bind(i,8110)),{Aggregate:t}=await e(this.featureName,"aggregate");new t(this.agentIdentifier,this.aggregator)}catch(e){(0,h.Z)("Downloading ".concat(this.featureName," failed...")),this.abortHandler?.()}};v.v6?e():(0,g.b)((()=>e()),!0)}}var m,b,y,w=i(2484);class A extends p{constructor(e,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,r,w.t,n),(0,d.B)(e,"starttime",(0,t.OP)(e).offset),(0,d.B)(e,"firstbyte",u.B),(0,g.K)((()=>this.measureDomContentLoaded())),(0,g.b)((()=>this.measureWindowLoaded()),!0),this.importAggregator()}measureWindowLoaded(){var r=(0,u.z)();(0,d.B)(this.agentIdentifier,"onload",r+(0,t.OP)(this.agentIdentifier).offset),(0,c.p)("timing",["load",r],void 0,e.D.pageViewTiming,this.ee)}measureDomContentLoaded(){(0,d.B)(this.agentIdentifier,"domContent",(0,u.z)()+(0,t.OP)(this.agentIdentifier).offset)}}m=A,b="featureName",y=w.t,(b=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(b))in m?Object.defineProperty(m,b,{value:y,enumerable:!0,configurable:!0,writable:!0}):m[b]=y;var E=i(9557),x=i(7022);class T extends E.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,x.D)(e,(function(e,r){t[e]=_(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,x.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=_(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=D(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=_(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=j(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function _(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=D(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function D(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function j(e){return"object"!=typeof e?[]:(0,x.D)(e,P)}function P(e,t){return t}var k=i(6797),O=i(5526),S=i(2438);var I,C=i(6998),N=i(8544),R=i(6382),M=-1,B=function(e){addEventListener("pageshow",(function(t){t.persisted&&(M=t.timeStamp,e(t))}),!0)},L=function(){return window.performance&&performance.getEntriesByType&&performance.getEntriesByType("navigation")[0]},z=function(){var e=L();return e&&e.activationStart||0},V=function(e,t){var r=L(),n="navigate";return M>=0?n="back-forward-cache":r&&(n=document.prerendering||z()>0?"prerender":document.wasDiscarded?"restore":r.type.replace(/_/g,"-")),{name:e,value:void 0===t?-1:t,rating:"good",delta:0,entries:[],id:"v3-".concat(Date.now(),"-").concat(Math.floor(8999999999999*Math.random())+1e12),navigationType:n}},W=function(e,t,r){try{if(PerformanceObserver.supportedEntryTypes.includes(e)){var n=new PerformanceObserver((function(e){Promise.resolve().then((function(){t(e.getEntries())}))}));return n.observe(Object.assign({type:e,buffered:!0},r||{})),n}}catch(e){}},q=function(e,t,r,n){var i,o;return function(a){t.value>=0&&(a||n)&&((o=t.value-(i||0))||void 0===i)&&(i=t.value,t.delta=o,t.rating=function(e,t){return e>t[1]?"poor":e>t[0]?"needs-improvement":"good"}(t.value,r),e(t))}},Z=function(e){var t=function(t){"pagehide"!==t.type&&"hidden"!==document.visibilityState||e(t)};addEventListener("visibilitychange",t,!0),addEventListener("pagehide",t,!0)},H=function(e){document.prerendering?addEventListener("prerenderingchange",(function(){return e()}),!0):e()},F=(new Date,0),U=1/0,G=0,X=function(e){e.forEach((function(e){e.interactionId&&(U=Math.min(U,e.interactionId),G=Math.max(G,e.interactionId),F=G?(G-U)/7+1:0)}))},Q=function(){return I?F:performance.interactionCount||0},K=function(){"interactionCount"in performance||I||(I=W("event",X,{type:"event",buffered:!0,durationThreshold:0}))},Y=[200,500],J=0,$=function(){return Q()-J},ee=[],te={},re=function(e){var t=ee[ee.length-1],r=te[e.interactionId];if(r||ee.length<10||e.duration>t.latency){if(r)r.entries.push(e),r.latency=Math.max(r.latency,e.duration);else{var n={id:e.interactionId,latency:e.duration,entries:[e]};te[n.id]=n,ee.push(n)}ee.sort((function(e,t){return t.latency-e.latency})),ee.splice(10).forEach((function(e){delete te[e.id]}))}},ne=i(2545);class ie extends p{constructor(r,n){var i;let o=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(r,n,R.t,o),i=this,v.il){if(this.pageHiddenTime=(0,C.e)(),this.performanceObserver,this.lcpPerformanceObserver,this.clsPerformanceObserver,this.fiRecorded=!1,"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){this.performanceObserver=new PerformanceObserver((function(){return i.perfObserver(...arguments)}));try{this.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}this.lcpPerformanceObserver=new PerformanceObserver((function(){return i.lcpObserver(...arguments)}));try{this.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}this.clsPerformanceObserver=new PerformanceObserver((function(){return i.clsObserver(...arguments)}));try{this.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}this.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((e=>{(0,N.iz)(e,(function(){return i.captureInteraction(...arguments)}))})),function(e,t){t=t||{},H((function(){K();var r,n=V("INP"),i=function(e){e.forEach((function(e){e.interactionId&&re(e),"first-input"===e.entryType&&!ee.some((function(t){return t.entries.some((function(t){return e.duration===t.duration&&e.startTime===t.startTime}))}))&&re(e)}));var t,i=(t=Math.min(ee.length-1,Math.floor($()/50)),ee[t]);i&&i.latency!==n.value&&(n.value=i.latency,n.entries=i.entries,r())},o=W("event",i,{durationThreshold:t.durationThreshold||40});r=q(e,n,Y,t.reportAllChanges),o&&(o.observe({type:"first-input",buffered:!0}),Z((function(){i(o.takeRecords()),n.value<0&&$()>0&&(n.value=0,n.entries=[]),r(!0)})),B((function(){ee=[],J=Q(),n=V("INP"),r=q(e,n,Y,t.reportAllChanges)})))}))}((t=>{let{name:r,value:n,id:i}=t;(0,c.p)("timing",[r.toLowerCase(),n,{metricId:i}],void 0,e.D.pageViewTiming,this.ee)})),!0===(0,t.Mt)(this.agentIdentifier,"page_view_timing.long_task")&&(e=>{const t=t=>{t.forEach((t=>{const r={name:"LT",value:t.duration,info:{ltFrame:t.name,ltStart:t.startTime,ltCtr:t.attribution[0].containerType}};"window"!==r.info.ltCtr&&Object.assign(r.info,{ltCtrSrc:t.attribution[0].containerSrc,ltCtrId:t.attribution[0].containerId,ltCtrName:t.attribution[0].containerName}),e(r)}))};let r;try{PerformanceObserver.supportedEntryTypes.includes("longtask")&&(r=new PerformanceObserver((e=>{Promise.resolve().then((()=>{t(e.getEntries())}))})),r.observe({type:"longtask",buffered:!0}))}catch(e){}r&&(0,ne.L)((()=>{t(r.takeRecords())}),!0)})((t=>{let{name:r,value:n,info:i}=t;(0,c.p)("timing",[r.toLowerCase(),n,i],void 0,e.D.pageViewTiming,this.ee)})),(0,C.N)((()=>{this.pageHiddenTime=(0,u.z)(),(0,c.p)("docHidden",[this.pageHiddenTime],void 0,e.D.pageViewTiming,this.ee)}),!0),(0,N.bP)("pagehide",(()=>(0,c.p)("winPagehide",[(0,u.z)()],void 0,e.D.pageViewTiming,this.ee))),this.importAggregator()}}perfObserver(t,r){t.getEntries().forEach((t=>{"first-paint"===t.name?(0,c.p)("timing",["fp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee):"first-contentful-paint"===t.name&&(0,c.p)("timing",["fcp",Math.floor(t.startTime)],void 0,e.D.pageViewTiming,this.ee)}))}lcpObserver(t,r){var n=t.getEntries();if(n.length>0){var i=n[n.length-1];if(this.pageHiddenTime<i.startTime)return;var o=[i],a=this.addConnectionAttributes({});a&&o.push(a),(0,c.p)("lcp",o,void 0,e.D.pageViewTiming,this.ee)}}clsObserver(t){t.getEntries().forEach((t=>{t.hadRecentInput||(0,c.p)("cls",[t],void 0,e.D.pageViewTiming,this.ee)}))}addConnectionAttributes(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e}captureInteraction(r){if(r instanceof t.Yu.EV&&!this.fiRecorded){var n=Math.round(r.timeStamp),i={type:r.type};this.addConnectionAttributes(i);const o=(0,t.OP)(this.agentIdentifier).offset;n<=(0,u.z)()?i.fid=(0,u.z)()-n:n>o&&n<=Date.now()?(n-=o,i.fid=(0,u.z)()-n):n=(0,u.z)(),this.fiRecorded=!0,(0,c.p)("timing",["fi",n,i],void 0,e.D.pageViewTiming,this.ee)}}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(ie,"featureName",R.t);const oe={dedicated:Boolean(v._A?.Worker),shared:Boolean(v._A?.SharedWorker),service:Boolean(v._A?.navigator?.serviceWorker)};let ae,se,ce;var ue=i(6034);class de extends p{constructor(t,r){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(t,r,ue.t9,n),function(e){if(!ae){if(oe.dedicated){ae=Worker;try{v._A.Worker=r(ae,"Dedicated")}catch(e){o(e,"Dedicated")}if(oe.shared){se=SharedWorker;try{v._A.SharedWorker=r(se,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(oe.service){ce=navigator.serviceWorker.register;try{v._A.navigator.serviceWorker.register=(t=ce,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return"undefined"==typeof Proxy?e:new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){v.v6||e("Workers/".concat(t,"/Unavailable"))}function i(t,r){e("Workers/".concat(t,"module"===r?"/Module":"/Classic"))}function o(t,r){e("Workers/".concat(r,"/SM/Unsupported")),(0,h.Z)("NR Agent: Unable to capture ".concat(r," workers."),t)}}((t=>(0,c.p)(ue.xS,[t],void 0,e.D.metrics,this.ee))),this.importAggregator()}}!function(e,t,r){(t=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(t))in e?Object.defineProperty(e,t,{value:r,enumerable:!0,configurable:!0,writable:!0}):e[t]=r}(de,"featureName",ue.t9),new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,O.ky)(16);this.agentIdentifier=t,this.sharedAggregator=new T({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(A),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const r=n(this.agentIdentifier),i=Array.from(this.desiredFeatures);i.sort(((t,r)=>e.p[t.featureName]-e.p[r.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===e.D.pageViewEvent){const e=(0,s.Z)(t.featureName),n=e.every((e=>r[e]));n||(0,h.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,S.P)(e),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,k.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,h.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,k.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[A,ie,de],loaderType:"lite"})})(),window.NRBA=o})();</script>
+    <title>Бутерброд И Чашка Логотип: создать онлайн - Turbologo</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="UtYGSLRNMH6EeF3lPA2vh/da656VUpdP8J11Pr71ki+QDnpNottEqyNsgZL+/FVRioQXhqwz/Y8PJhfkv4Lj4Q==" />
+
+    <meta property="og:title" content="Бутерброд И Чашка Логотип: создать онлайн - Turbologo" />
+    <meta property="og:description" content="Бутерброд И Чашка Логотип подходит, если вы работает в таких сферах как Кафе, Еда. Используйте этот дизайн для создания логотипа своей компании." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://turbologo.ru/create-logo/templates/958785-buterbrod-i-chashka-logotip" />
+    <meta property="og:image" content="https://uploads.turbologo.com/uploads/design/hq_preview_image/958785/draw_svg20210608-15818-tfl5fd.svg.png" />
+
+
+      <meta property="og:image:width" content="500" />
+      <meta property="og:image:height" content="500" />
+
+    <meta name="description" content="Бутерброд И Чашка Логотип подходит, если вы работает в таких сферах как Кафе, Еда. Используйте этот дизайн для создания логотипа своей компании." />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="google-signin-client_id" content="401226411324-f3ce2r923qoc5uk4vnou5cag29lu8ogv.apps.googleusercontent.com">
+
+    <script type='application/ld+json'>
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "url": "https://turbologo.ru",
+        "logo": "https://turbologo.ru/turbologo-logo.png"
+      }
+    </script>
+
+    
+
+    
+
+    <link rel="canonical" href="https://turbologo.ru/create-logo/templates/958785-buterbrod-i-chashka-logotip">
+
+    <link rel="alternate" hrefLang="en" href="https://turbologo.com/logo-maker/templates/958785-sandwich-and-cup-logo" />
+<link rel="alternate" hrefLang="ru" href="https://turbologo.ru/create-logo/templates/958785-buterbrod-i-chashka-logotip" />
+<link rel="alternate" hrefLang="es" href="https://turbologo.com/es/crear-logo/templates/958785-logo-de-sandwich-y-taza" />
+<link rel="alternate" hrefLang="pt" href="https://turbologo.com/pt/criar-logo/templates/958785-sanduiche-e-logotipo-do-copo" />
+<link rel="alternate" hrefLang="fr" href="https://turbologo.com/fr/creer-un-logo/templates/958785-logo-sandwich-et-tasse" />
+<link rel="alternate" hrefLang="it" href="https://turbologo.com/it/crea-logo/templates/958785-logo-di-sandwich-e-tazza" />
+<link rel="alternate" hrefLang="de" href="https://turbologo.com/de/logo-erstellen/templates/958785-sandwich-und-tasse-logo" />
+<link rel="alternate" hrefLang="tr" href="https://turbologo.com/tr/logo-tasarim/templates/958785-sandvic-ve-kupa-logosu" />
+
+    <link rel="stylesheet" media="all" href="https://assets.turbologo.ru/assets/application-08501d749702ac91f19fd6cdd9dada7b4f2bad8db338dd8e9f677d143bdfc698.css" />
+    <link rel="shortcut icon" type="image/png" href="https://assets.turbologo.ru/assets/favicon-3a4b4a01c2c76d5c6589f3e67ce6b9ecb8959e1fbeefa46ac9336446d81bd77c.png" sizes="32x32" />
+
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-10947163-13', 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('linker:autoLink', ["turbologo.com"]);
+
+    ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KKNJSZH');</script>
+  <!-- End Google Tag Manager -->
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-792427572"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+      gtag('config', 'AW-792427572');
+  </script>
+
+      <script>window.bugsnag_key = 'c2de551fbedfa8addfd60f98a20f026a'</script>
+
+    
+      <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?168",t.onload=function(){VK.Retargeting.Init("VK-RTRG-133518-6JHmz"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script>
+
+    <!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+ fbq('init', '139894600014328');
+fbq('track', 'PageView');
+</script>
+<!-- End Facebook Pixel Code -->
+    <script src="https://script.tapfiliate.com/tapfiliate.js" type="text/javascript" async></script>
+<script type="text/javascript">
+  (function(t,a,p){t.TapfiliateObject=a;t[a]=t[a]||function(){ (t[a].q=t[a].q||[]).push(arguments)}})(window,'tap');
+
+  tap('create', '24668-7b6426', { integration: "javascript" });
+  tap('detect');
+</script>
+  </head>
+
+  <body class="">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKNJSZH"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '763326294041532',
+      cookie     : true,
+      xfbml      : true,
+      version    : 'v3.2'
+    });
+
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+<script>
+  window.handleGoogleAuth = function(authInfos) {
+    console.log('authInfos', authInfos);
+  }
+
+  window.onload = function () {
+    window.googleTokenClient = google.accounts.oauth2.initTokenClient({
+      client_id: '401226411324-f3ce2r923qoc5uk4vnou5cag29lu8ogv.apps.googleusercontent.com',
+      scope: 'email profile',
+      callback: function(response) {
+        var accessToken = response.access_token;
+
+        var $form = $('.google-login:visible').closest('form');
+
+        $form.find("input[name=google_access_token]").val(accessToken);
+        $form.submit();
+
+        // clean access token
+        $form.find("input[name=google_access_token]").val('');
+
+        window.hideMasterLoader();
+      }
+    });
+
+    window.google.accounts.id.initialize({
+      client_id: "401226411324-f3ce2r923qoc5uk4vnou5cag29lu8ogv.apps.googleusercontent.com",
+      callback: handleGoogleAuth,
+    });
+  };
+</script>
+
+    <div id="tooltip" class="tooltip"></div>
+    <div class="modal-outer">
+  <div class="modal-middle">
+    <div class="modal default" id="login">
+      <div class="h3">Логин</div>
+
+      <form name='login' id="login-form">
+        
+<div class="social-signin-buttons">
+  <a href="javascript:void(0)" class="facebook-login">
+    <img data-src="https://assets.turbologo.ru/assets/icons/facebook-5a09b6365a7e7899ee54b317e45456f6dee760fc79596de7386b8f5354dfc0ec.svg" class="lazyload" />
+      Войти через Facebook
+  </a>
+  <a href="javascript:void(0)" class="google-login">
+    <img data-src="https://assets.turbologo.ru/assets/icons/google-3424f30a0f8de2ae9ffc53ec167f2101608179cba04536a58647e896e2924af7.svg" class="lazyload" />
+      Войти через Google
+  </a>
+
+  <input type="hidden" name="facebook_access_token" />
+  <input type="hidden" name="google_access_token" />
+</div>
+        <div class="errors"></div>
+        <label>
+          <input type='email' name='email' placeholder='Email' />
+        </label>
+        <label>
+          <input type='password' name='password' placeholder='Пароль' />
+        </label>
+        <input type="hidden" name="redirect_url" value=""/>
+        <input type='submit' value='Войти' class='submit button' />
+        <a href="#password_restore" rel="modal" class="basic">Забыл пароль</a>
+        <a href="#signup" rel="modal" class="basic">Регистрация</a>
+      </form>
+    </div><!-- end login modal -->
+
+
+    <div class="modal default" id="general-error">
+      <div class="h3">Произошла ошибка</div>
+      <p>Пожалуйста обновите страницу и попробуйте снова. Если проблема возникает снова, пожалуйста свяжитесь с нами.</p>
+    </div>
+
+    <div class="modal default" id="signup">
+      <div class="h3">Регистрация</div>
+      <form name='signup' id="signup-form">
+        
+<div class="social-signin-buttons">
+  <a href="javascript:void(0)" class="facebook-login">
+    <img data-src="https://assets.turbologo.ru/assets/icons/facebook-5a09b6365a7e7899ee54b317e45456f6dee760fc79596de7386b8f5354dfc0ec.svg" class="lazyload" />
+      Зарегистрироваться через Facebook
+  </a>
+  <a href="javascript:void(0)" class="google-login">
+    <img data-src="https://assets.turbologo.ru/assets/icons/google-3424f30a0f8de2ae9ffc53ec167f2101608179cba04536a58647e896e2924af7.svg" class="lazyload" />
+      Зарегистрироваться через Google
+  </a>
+
+  <input type="hidden" name="facebook_access_token" />
+  <input type="hidden" name="google_access_token" />
+</div>
+        <div class="errors"></div>
+        <label><input type='email' name='email' placeholder='Email' /></label>
+        <label><input type='password' name='password' placeholder='Пароль' /></label>
+        <input type="hidden" name="redirect_url" value=""/>
+        <input type="hidden" name="locale" value="ru"/>
+        <input type='submit' value='Регистрация' class='submit button' />
+        <a href="#login" rel="modal" class="basic">Уже есть аккаунт?</a>
+        <p class="personal-agreement-block">Регистрируясь вы <a href="/agreement.pdf" target="_blank">соглашаетесь на обработку персональных данных</a></p>
+      </form>
+    </div>
+
+    <div class="modal default" id="signup-from-template">
+      <div class="h3">Зарегистрируйтесь для использования шаблона</div>
+      <form name='signup' id="signup-form">
+        
+<div class="social-signin-buttons">
+  <a href="javascript:void(0)" class="facebook-login">
+    <img data-src="https://assets.turbologo.ru/assets/icons/facebook-5a09b6365a7e7899ee54b317e45456f6dee760fc79596de7386b8f5354dfc0ec.svg" class="lazyload" />
+      Зарегистрироваться через Facebook
+  </a>
+  <a href="javascript:void(0)" class="google-login">
+    <img data-src="https://assets.turbologo.ru/assets/icons/google-3424f30a0f8de2ae9ffc53ec167f2101608179cba04536a58647e896e2924af7.svg" class="lazyload" />
+      Зарегистрироваться через Google
+  </a>
+
+  <input type="hidden" name="facebook_access_token" />
+  <input type="hidden" name="google_access_token" />
+</div>
+        <div class="errors"></div>
+        <label><input type='email' name='email' placeholder='Email' /></label>
+        <label><input type='password' name='password' placeholder='Пароль' /></label>
+        <input type="hidden" name="redirect_url" value=""/>
+        <input type="hidden" name="locale" value="ru"/>
+        <input type='submit' value='Регистрация' class='submit button' />
+        <a href="#login" rel="modal" class="basic">Уже есть аккаунт?</a>
+        <p class="personal-agreement-block">Регистрируясь вы <a href="/agreement.pdf" target="_blank">соглашаетесь на обработку персональных данных</a></p>
+      </form>
+    </div>
+
+    <div class="modal default" id="password_restore">
+      <div class="h3">Восстановить пароль</div>
+      <p style="padding-bottom: 0;">Введите ваш email и мы вышлем инструкции по сбросу пароля</p>
+      <form style="padding-top: 0;" class="new_user" id="new_user" action="/api/password" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+        <div class="errors"></div>
+        <div class="notifications"></div>
+        <input  placeholder="Email" type="email" name="user[email]"/>
+        <input type="submit" name="commit" value="Отправить" class="submit button" style="margin-top: 20px" data-disable-with="Отправить" />
+
+        <a href="#login" rel="modal" class="basic">Вернуться к логину</a>
+</form>    </div>
+  </div>
+
+
+  <div class="modal-overlay"></div>
+</div>
+
+    <div class="wrapper">
+      
+    <div class="tl_header ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 tl_header_in">
+                    <a href="https://turbologo.ru" class="tl_header__logo">
+                        <img src="https://assets.turbologo.ru/assets/landing/icons/pi-logo-66cda23dce76f1adf42edacfd73d7a171f2903ceb9bb6a2a4b5b31222d96f700.svg" width="1000" height="1000" alt="Логотип Турболого" />
+                    </a>
+
+                      <a href="#" class="tl_header__nav_btn">
+                          <img data-src="https://assets.turbologo.ru/assets/nav-ea9b29e28774a3f332e6b97157e35631293ca6639f26a5494f31751416e519ef.svg" width="1000" height="1000" class="lazyload" alt="Логотип Турболого" />
+                      </a>
+
+                      <div class="tl_header_wrapper">
+                          <div class="tl_header_header">
+                              <img src="https://assets.turbologo.ru/assets/landing/icons/pi-logo-66cda23dce76f1adf42edacfd73d7a171f2903ceb9bb6a2a4b5b31222d96f700.svg" width="1000" height="1000" class="tl_header_header__logo" alt="Логотип Турболого" />
+                              <a href="#">
+                                  <img data-src="https://assets.turbologo.ru/assets/close-3a301ea99c60076f3ca9cfdb4c2a1906577b5fa1a4d4a33123895e5d15db17a9.svg" width="1000" height="1000" class="lazyload tl_header_header__close" alt="Логотип Турболого" />
+                              </a>
+                          </div>
+
+                          <ul class="tl_header_nav">
+                              <li class="tl_header_nav__item tl_header_nav__item--home"><a href="https://turbologo.ru">Главная</a></li>
+
+                              <li class="tl_header_nav__item tl_header_nav__item--create_logo"><a href="https://turbologo.ru/create-logo">Создать лого</a></li>
+
+                                <li class="tl_header_nav__item tl_header_nav__item--gallery"><a href="https://turbologo.ru/gallery">Галерея</a></li>
+                                <li class="tl_header_nav__item tl_header_nav__item--templates"><a href="https://turbologo.ru/create-logo/templates">Шаблоны</a></li>
+                                  <li class="tl_header_nav__item tl_header_nav__item--blog"><a href="https://turbologo.ru/blog/">Блог</a></li>
+                              <li class="tl_header_nav__item tl_header_nav__item--separator_first"></li>
+                              <li class="tl_header_nav__item tl_header_nav__item--faq"><a href="https://turbologo.ru/faq">Вопросы и ответы</a></li>
+                              <li class="tl_header_nav__item tl_header_nav__item--support"><a href="https://turbologo.ru/contacts">Поддержка</a></li>
+
+                                <li class="tl_header_nav__item tl_header_nav__item--make_logo"><a href="https://turbologo.ru/create-logo">Создать лого</a></li>
+
+                                <li class="tl_header_nav__item tl_header_nav__item--sign_in">
+                                    <a href="#login" rel="modal">Войти</a>
+                                </li>
+
+                              <li class="tl_header_nav__item tl_header_nav__item--separator_second"></li>
+
+                                  <li class="tl_header_nav__item tl_header_nav__item--lng">
+        <a href="#" id="lng">Русский</a>
+        <ul class="tl_header_lng">
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="en" href="https://turbologo.com/logo-maker/templates/958785-sandwich-and-cup-logo">
+                  English
+                </a>
+              </li>
+              <li class="tl_header_lng__item tl_header_lng__item--selected">
+                <a class="item" rel="alternate" hreflang="" href="#">
+                  Русский
+                </a>
+              </li>
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="es" href="https://turbologo.com/es/crear-logo/templates/958785-logo-de-sandwich-y-taza">
+                  Español
+                </a>
+              </li>
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="pt" href="https://turbologo.com/pt/criar-logo/templates/958785-sanduiche-e-logotipo-do-copo">
+                  Português
+                </a>
+              </li>
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="fr" href="https://turbologo.com/fr/creer-un-logo/templates/958785-logo-sandwich-et-tasse">
+                  Français
+                </a>
+              </li>
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="it" href="https://turbologo.com/it/crea-logo/templates/958785-logo-di-sandwich-e-tazza">
+                  Italiano
+                </a>
+              </li>
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="de" href="https://turbologo.com/de/logo-erstellen/templates/958785-sandwich-und-tasse-logo">
+                  Deutsch
+                </a>
+              </li>
+              <li class="tl_header_lng__item ">
+                <a class="item" rel="alternate" hreflang="tr" href="https://turbologo.com/tr/logo-tasarim/templates/958785-sandvic-ve-kupa-logosu">
+                  Türk
+                </a>
+              </li>
+        </ul>
+    </li>
+
+                          </ul>
+                      </div>
+
+                      <div class="tl_header__overlay"></div>
+                          <a href="https://turbologo.ru/create-logo" class="tl_header__create_logo">Создать лого</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+      <div id="main" class="main service">
+        
+<div id="logo-template">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="logo-template__breadcrumbs">
+          <a href="https://turbologo.ru">Главная</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://turbologo.ru/create-logo">Создать лого</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="https://turbologo.ru/create-logo/templates">Шаблоны логотипов</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row logo-template__card">
+      <div class="col-md-6 logo-template_image_container">
+        <a href="#" data-template-id="958785" class="use-template-link">
+          <img class="logo-templates__image img-responsive" src="https://uploads.turbologo.com/uploads/design/hq_preview_image/958785/draw_svg20210608-15818-tfl5fd.svg.png" title="Бутерброд И Чашка Логотип" alt="Бутерброд И Чашка Логотип" width="500" height="500" />
+        </a>
+      </div>
+      <div class="col-md-6 logo-template__card_title">
+        <h1>Бутерброд И Чашка Логотип</h1>
+      </div>
+      <div class="col-md-6 logo-templates__tags-list">
+            <a href="/gallery/kafe" class="logo-template__tag_item">
+              Кафе
+            </a>
+            <a href="/gallery/eda" class="logo-template__tag_item">
+              Еда
+            </a>
+
+            <a href="/create-logo/templates/chay" class="logo-template__tag_item">
+              Чай
+            </a>
+            <a href="/create-logo/templates/buterbrod" class="logo-template__tag_item">
+              Бутерброд
+            </a>
+            <a href="/create-logo/templates/buterbrody" class="logo-template__tag_item">
+              Бутерброды
+            </a>
+            <a href="/create-logo/templates/gamburger" class="logo-template__tag_item">
+              Гамбургер
+            </a>
+            <a href="/create-logo/templates/bystroe-pitanie" class="logo-template__tag_item">
+              Быстрое питание
+            </a>
+            <a href="/create-logo/templates/korichnevyy" class="logo-template__tag_item">
+              Коричневый
+            </a>
+            <a href="/create-logo/templates/belyy" class="logo-template__tag_item">
+              Белый
+            </a>
+            <a href="/create-logo/templates/burger" class="logo-template__tag_item">
+              Бургер
+            </a>
+            <a href="/create-logo/templates/chashka-kofe" class="logo-template__tag_item">
+              Чашка кофе
+            </a>
+            <a href="/create-logo/templates/illyustratsiya" class="logo-template__tag_item">
+              Иллюстрация
+            </a>
+            <a href="/create-logo/templates/lineynyy-dizayn" class="logo-template__tag_item">
+              Линейный дизайн
+            </a>
+            <a href="/create-logo/templates/shtrihovaya-grafika" class="logo-template__tag_item">
+              Штриховая графика
+            </a>
+            <a href="/create-logo/templates/eda-i-napitki" class="logo-template__tag_item">
+              Еда и напитки
+            </a>
+            <a href="/create-logo/templates/pitanie" class="logo-template__tag_item">
+              Питание
+            </a>
+            <a href="/create-logo/templates/koreyskaya-eda" class="logo-template__tag_item">
+              Корейская еда
+            </a>
+            <a href="/create-logo/templates/zavtrak" class="logo-template__tag_item">
+              Завтрак
+            </a>
+      </div>
+      <div class="col-md-6 logo-templates__buttons">
+        <a data-template-id="958785" href="#" class="logo-templates__create-button btn btn-action btn-edge use-template-link">
+          Создать лого по шаблону
+        </a>
+
+      </div>
+      <div class="col-md-6 logo-template__card_description">
+        <p>Бутерброд И Чашка Логотип подходит, если вы работает в таких сферах как Кафе, Еда. Используйте этот дизайн для создания логотипа своей компании.</p>
+      </div>
+    </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 style="margin-top: 40px; margin-bottom: 5px;">Похожие шаблоны</h2>
+        </div>
+        <div class="logo-templates__related-logos">
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/959653-oranzhevyy-osminog-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/959653/preview_image20200908-30678-170rgpn.png" alt="Оранжевый Осьминог Логотип" title="Оранжевый Осьминог Логотип" width="500" height="500" />
+          <span class="thumb__title">Оранжевый Осьминог Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/2029799-burrito-chelovek-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/2029799/preview_image20210406-7927-1fng6je.png" alt="Буррито Человек Логотип" title="Буррито Человек Логотип" width="500" height="500" />
+          <span class="thumb__title">Буррито Человек Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/4763171-kafe-kalligrafiya-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/4763171/preview_image20210625-17635-10bbvpc.png" alt="Кафе Каллиграфия Логотип" title="Кафе Каллиграфия Логотип" width="500" height="500" />
+          <span class="thumb__title">Кафе Каллиграфия Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/80795-logotip-restorana-steyk-iz-govyadiny">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/80795/preview_image20210819-17584-mbygh0.png" alt="Логотип Ресторана Стейк Из Говядины" title="Логотип Ресторана Стейк Из Говядины" width="500" height="500" />
+          <span class="thumb__title">Логотип Ресторана Стейк Из Говядины</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/408562-kulinarnyy-shpatel-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/408562/preview_image20210813-13853-1bkcx3p.png" alt="Кулинарный Шпатель Логотип" title="Кулинарный Шпатель Логотип" width="500" height="500" />
+          <span class="thumb__title">Кулинарный Шпатель Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/5024304-petuh-restoran-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/5024304/preview_image20210611-3863-z8cjgx.png" alt="Петух Ресторан Логотип" title="Петух Ресторан Логотип" width="500" height="500" />
+          <span class="thumb__title">Петух Ресторан Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/4859322-kusok-torta-konditerskie-izdeliya-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/4859322/preview_image20210602-26376-1imslb1.png" alt="Кусок Торта Кондитерские Изделия Логотип" title="Кусок Торта Кондитерские Изделия Логотип" width="500" height="500" />
+          <span class="thumb__title">Кусок Торта Кондитерские Изделия Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/3581730-kruassan-i-pechenie-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/3581730/preview_image20210721-23772-skx3b9.png" alt="Круассан И Печенье Логотип" title="Круассан И Печенье Логотип" width="500" height="500" />
+          <span class="thumb__title">Круассан И Печенье Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/175728-abstraktnyy-logotip-kafe">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/175728/preview_image20210819-17584-3koph3.png" alt="Абстрактный Логотип Кафе" title="Абстрактный Логотип Кафе" width="500" height="500" />
+          <span class="thumb__title">Абстрактный Логотип Кафе</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/400918-zelenyy-pelikan-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/400918/preview_image20210805-28561-341s14.png" alt="Зеленый Пеликан Логотип" title="Зеленый Пеликан Логотип" width="500" height="500" />
+          <span class="thumb__title">Зеленый Пеликан Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/965594-rozovyy-ponchik-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/965594/preview_image20201030-23622-1fnlqfv.png" alt="Розовый Пончик Логотип" title="Розовый Пончик Логотип" width="500" height="500" />
+          <span class="thumb__title">Розовый Пончик Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/204942-chernyy-burger-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/204942/preview_image20210819-17584-1laljye.png" alt="Черный Бургер Логотип" title="Черный Бургер Логотип" width="500" height="500" />
+          <span class="thumb__title">Черный Бургер Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/1997016-tayskiy-restoran-blyudo-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/1997016/preview_image20201126-14807-1h52v4j.png" alt="Тайский Ресторан Блюдо Логотип" title="Тайский Ресторан Блюдо Логотип" width="500" height="500" />
+          <span class="thumb__title">Тайский Ресторан Блюдо Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/1046775-zavod-zelenyy-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/1046775/preview_image20210713-19572-cwtu7d.png" alt="Завод Зеленый Логотип" title="Завод Зеленый Логотип" width="500" height="500" />
+          <span class="thumb__title">Завод Зеленый Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/170892-steyk-cherno-belyy-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/170892/preview_image20220419-14132-1wzldmu.png" alt="Стейк Черно-белый Логотип" title="Стейк Черно-белый Логотип" width="500" height="500" />
+          <span class="thumb__title">Стейк Черно-белый Логотип</span>
+        </a>
+      </div>
+
+                    <div class="col-md-3 col-sm-4 col-xs-6 thumb">
+        <a href="/create-logo/templates/2148838-rozovo-zheltyy-logotip">
+          <img class="img-responsive lazyload" data-src="https://uploads.turbologo.com/uploads/design/preview_image/2148838/preview_image20210707-31126-3yvvcs.png" alt="Розово-желтый Логотип" title="Розово-желтый Логотип" width="500" height="500" />
+          <span class="thumb__title">Розово-желтый Логотип</span>
+        </a>
+      </div>
+
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+  <div class="features-boxed" style="background-color:#ffffff">
+    <div class="container tl_home_container">
+      <div class="row">
+        <div class="col-sm-12" style="margin-top:30px">
+          <h2>Логотипы по отраслям</h2>
+          <div class="category-list">
+            <ul>
+                <li><a href="/gallery/hand-made">Hand Made</a></li>
+                <li><a href="/gallery/it">IT, Разработка</a></li>
+                <li><a href="/gallery/pr-logo">PR</a></li>
+                <li><a href="/gallery/squarespace-logo">Squarespace</a></li>
+                <li><a href="/gallery/youtube">YouTube</a></li>
+                <li><a href="/gallery/abstraktsiya">Абстракция</a></li>
+                <li><a href="/gallery/aviatsiya">Авиакомпания</a></li>
+                <li><a href="/gallery/avto">Авто</a></li>
+                <li><a href="/gallery/avtomoika-logo">Автомойка</a></li>
+                <li><a href="/gallery/avtoservis-logo">Автосервис</a></li>
+                <li><a href="/gallery/agrokompanii">Агрокомпании</a></li>
+                <li><a href="/gallery/butik-odezhdy-i-aksessuarov">Аксессуары</a></li>
+                <li><a href="/gallery/iskusstvo">Арт, искусство</a></li>
+                <li><a href="/gallery/arhitektura">Архитектура</a></li>
+                <li><a href="/gallery/audit">Аудит</a></li>
+                <li><a href="/gallery/bank">Банк, финансовые организации</a></li>
+                <li><a href="/gallery/bar-logos">Бар</a></li>
+                <li><a href="/gallery/barbershop">Барбершоп</a></li>
+                <li><a href="/gallery/basketball-logo">Баскетбол</a></li>
+                <li><a href="/gallery/ohrana">Безопасность</a></li>
+                <li><a href="/gallery/baseball-logo">Бейсбол</a></li>
+                <li><a href="/gallery/biznes">Бизнес</a></li>
+                <li><a href="/gallery/blagotvoritelnost">Благотворительные организации</a></li>
+                <li><a href="/gallery/blog-logo">Блог</a></li>
+                <li><a href="/gallery/butik-logo">Бутик</a></li>
+                <li><a href="/gallery/buhgalterskiy-uchet">Бухгалтерский учет</a></li>
+                <li><a href="/gallery/veterinarnaya-klinika">Ветеринарная клиника</a></li>
+                <li><a href="/gallery/vizazhist">Визажист</a></li>
+                <li><a href="/gallery/vyazanie">Вязание</a></li>
+                <li><a href="/gallery/otel">Гостиница, отель</a></li>
+                <li><a href="/gallery/graficheskii-dizain-logo">Графический дизайн</a></li>
+                <li><a href="/gallery/logo-gruppy">Группа</a></li>
+                <li><a href="/gallery/dveri">Двери</a></li>
+                <li><a href="/gallery/detskiy">Детский</a></li>
+                <li><a href="/gallery/cifrovoy-logo">Диджитал</a></li>
+                <li><a href="/gallery/dizajn-interera-logo">Дизайн интерьера</a></li>
+                <li><a href="/gallery/zdaniye">Дом</a></li>
+                <li><a href="/gallery/dom">Дом</a></li>
+                <li><a href="/gallery/eda">Еда</a></li>
+                <li><a href="/gallery/zhivotnye">Животные</a></li>
+                <li><a href="/gallery/zdorovyy-obraz-zhizni">Здоровье</a></li>
+                <li><a href="/gallery/zoomagazin">Зоомагазин</a></li>
+                <li><a href="/gallery/inzhenernoe-delo">Инжиниринг, проектирование</a></li>
+                <li><a href="/gallery/instagram">Инстаграм</a></li>
+                <li><a href="/gallery/internet-magazin">Интернет магазин</a></li>
+                <li><a href="/gallery/yoga">Йога</a></li>
+                <li><a href="/gallery/kafe">Кафе</a></li>
+                <li><a href="/gallery/kejtering-logo">Кейтеринг</a></li>
+                <li><a href="/gallery/kibersport-logo">Киберспорт</a></li>
+                <li><a href="/gallery/kino">Кино</a></li>
+                <li><a href="/gallery/cleaning-logos">Клининг</a></li>
+                <li><a href="/gallery/klub-logo">Клуб</a></li>
+                <li><a href="/gallery/kompyuternye-igry">Компьютерные игры</a></li>
+                <li><a href="/gallery/kompyutery">Компьютеры</a></li>
+                <li><a href="/gallery/kondicioner-logo">Кондиционеры</a></li>
+                <li><a href="/gallery/konsalting">Консалтинг</a></li>
+                <li><a href="/gallery/kosmetika">Косметика</a></li>
+                <li><a href="/gallery/kouch-logo">Коуч</a></li>
+                <li><a href="/gallery/kofe">Кофе, кофейня</a></li>
+                <li><a href="/gallery/kreativ-logo">Креатив</a></li>
+                <li><a href="/gallery/landshaftnyy-dizayn">Ландшафтный дизайн</a></li>
+                <li><a href="/gallery/lichniy-logo">Личный</a></li>
+                <li><a href="/gallery/logistika-logo">Логистика</a></li>
+                <li><a href="/gallery/manikyur">Маникюр</a></li>
+                <li><a href="/gallery/marketing">Маркетинг</a></li>
+                <li><a href="/gallery/mask-logo">Маска</a></li>
+                <li><a href="/gallery/massage-logo">Массаж</a></li>
+                <li><a href="/gallery/mebel">Мебель</a></li>
+                <li><a href="/gallery/meditsina">Медицина</a></li>
+                <li><a href="/gallery/moda-logo">Мода</a></li>
+                <li><a href="/gallery/muzyka">Музыка</a></li>
+                <li><a href="/gallery/nedvizhimost">Недвижимость</a></li>
+                <li><a href="/gallery/nepribylnaya-organizatsiya">Некоммерческая организация</a></li>
+                <li><a href="/gallery/neft-gaz">Нефть</a></li>
+                <li><a href="/gallery/baby-logos">Новорожденный</a></li>
+                <li><a href="/gallery/obrazovanie">Обучение и образование</a></li>
+                <li><a href="/gallery/magazin-odezhdy">Одежда</a></li>
+                <li><a href="/gallery/ohota-i-rybalka">Охота и рыбалка</a></li>
+                <li><a href="/gallery/parikmaherskaya">Парикмахерская</a></li>
+                <li><a href="/gallery/pekarnya-logo">Пекарня</a></li>
+                <li><a href="/gallery/perevozki-logo">Перевозки</a></li>
+                <li><a href="/gallery/logo-piva">Пиво</a></li>
+                <li><a href="/gallery/podcast">Подкаст</a></li>
+                <li><a href="/gallery/politika">Политика</a></li>
+                <li><a href="/gallery/prazdnik-logo">Праздник</a></li>
+                <li><a href="/gallery/app-logo">Приложение</a></li>
+                <li><a href="/gallery/priroda">Природа</a></li>
+                <li><a href="/gallery/proizvodstvo">Производство</a></li>
+                <li><a href="/gallery/turizm">Путешествия</a></li>
+                <li><a href="/gallery/razvlechenie">Развлечение</a></li>
+                <li><a href="/gallery/reklama">Рекламное агентство</a></li>
+                <li><a href="/gallery/remont">Ремонт</a></li>
+                <li><a href="/gallery/remont-kvartir-logo">Ремонт квартир</a></li>
+                <li><a href="/gallery/resnicy-logo">Ресницы</a></li>
+                <li><a href="/gallery/restoran">Ресторан</a></li>
+                <li><a href="/gallery/salon-krasoty">Салон красоты</a></li>
+                <li><a href="/gallery/santehnik-logo">Сантехник</a></li>
+                <li><a href="/gallery/svadba">Свадьба</a></li>
+                <li><a href="/gallery/semya">Семья</a></li>
+                <li><a href="/gallery/sluzhba-dostavki">Служба доставки</a></li>
+                <li><a href="/gallery/solnechnaya-energiya">Солнечная энергия</a></li>
+                <li><a href="/gallery/spa-salon">Спа</a></li>
+                <li><a href="/gallery/sport">Спорт</a></li>
+                <li><a href="/gallery/startap">Стартап</a></li>
+                <li><a href="/gallery/stomatologiya">Стоматология</a></li>
+                <li><a href="/gallery/strahovanie">Страхование</a></li>
+                <li><a href="/gallery/stroitelstvo">Строительство</a></li>
+                <li><a href="/gallery/taksi">Такси</a></li>
+                <li><a href="/gallery/tatu">Тату</a></li>
+                <li><a href="/gallery/telekommunikatsiya">Телевидение</a></li>
+                <li><a href="/gallery/tehnologii-logo">Технологии</a></li>
+                <li><a href="/gallery/torgovlya">Торговля</a></li>
+                <li><a href="/gallery/transport">Транспорт</a></li>
+                <li><a href="/gallery/trendovyy-logotip">Трендовый логотип</a></li>
+                <li><a href="/gallery/uhod-za-gazonom">Уход за газоном</a></li>
+                <li><a href="/gallery/teacher-logos">Учитель</a></li>
+                <li><a href="/gallery/finansy">Финансы</a></li>
+                <li><a href="/gallery/fitnes">Фитнес</a></li>
+                <li><a href="/gallery/fotografiya">Фотография</a></li>
+                <li><a href="/gallery/freelance-logo">Фриланс</a></li>
+                <li><a href="/gallery/futbolnyy-klub">Футбол</a></li>
+                <li><a href="/gallery/himchistka-prachechnaya">Химчистка, прачечная</a></li>
+                <li><a href="/gallery/temple-logos">Храм</a></li>
+                <li><a href="/gallery/tsvety">Цветы</a></li>
+                <li><a href="/gallery/chisto">Четкий</a></li>
+                <li><a href="/gallery/tekstil">Швея</a></li>
+                <li><a href="/gallery/school-logos">Школа</a></li>
+                <li><a href="/gallery/shopify-logos">Шопифай</a></li>
+                <li><a href="/gallery/yuvelirnoe-delo">Ювелирное дело</a></li>
+                <li><a href="/gallery/yurisprudentsiya">Юриспруденция</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div class="tl_banner">
+    <div class="container tl_banner_in">
+        <div class="row">
+            <div class="col-md-5">
+                <h2 class="tl_banner__title">Создайте свой логотип вместе с Турболого</h2>
+                <img title="Создайте свой логотип вместе с Турболого" alt="Создайте свой логотип вместе с Турболого" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/logo_maker/banner-mobile-be66f8f1330cfd6177e664c9fc96372df6b4f68790ffa9b23fee5e57c5208599.png" class="lazyload tl_banner__img tl_banner__img--mobile" />
+                <p class="tl_banner__description">Большое разнообразие шаблонов дизайна и простой интерфейс. Создайте свой уникальный бренд здесь и сейчас.</p>
+                <a href="https://turbologo.ru/create-logo" class="tl_banner__make">Создать логотип</a>
+                <img title="Создайте свой логотип вместе с Турболого" alt="Создайте свой логотип вместе с Турболого" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/logo_maker/banner-desktop-85a10ecd370f9aaff69de208eca2ac339ab63df291bb487fb8bf029fc13c00a2.png" class="lazyload tl_banner__img tl_banner__img--desktop" />
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="container tl_footer">
+    <div class="row">
+        <div class="col-md-12">
+            <img width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/pi-logo-66cda23dce76f1adf42edacfd73d7a171f2903ceb9bb6a2a4b5b31222d96f700.svg" title="Конструктор логотипов" alt="Конструктор логотипов" class="lazyload tl_footer__logo tl_footer__logo--mobile" />
+        </div>
+        <div class="col-xs-12 col-md-8">
+            <div class="row">
+                <div class="col-md-12">
+                    <img width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/pi-logo-66cda23dce76f1adf42edacfd73d7a171f2903ceb9bb6a2a4b5b31222d96f700.svg" title="Конструктор логотипов" alt="Конструктор логотипов" class="lazyload tl_footer__logo tl_footer__logo--desktop" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="tl_footer__copyright">
+                        Турболого — создание логотипа онлайн, бесплатно.<br>
+                        © 2023 «Турболого»
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <ul itemscope itemtype="https://schema.org/Organization" class="tl_footer_social">
+                        <li>
+                            <a itemprop="sameAs" href="https://www.youtube.com/channel/UCz-54Dwm6A2cdvyPFRf6bFA">
+                                <img title="Youtube" alt="Youtube" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/youtube-538d577ee7f1a1e6d9d124f9657d4adc6a00bd2758080af384c56a38540320e1.svg" class="lazyload" />
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" href="https://vk.com/turbologo">
+                                <img title="Vk" alt="Vk" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/vk-972fffab3925c29191775ccb0f1460e5cdd5eae5e51c15db4a724406e4a64a90.svg" class="lazyload" />
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" href="https://www.instagram.com/turbologo_ru/" target="_blank">
+                                <img title="Instagram" alt="Instagram" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/instagram-524bc4aeabce4ad92fd9fcd20c4fab96369675e3069b50ba6b73ce9e65c4f9d1.svg" class="lazyload" />
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" href="https://twitter.com/turbologo_ru" target="_blank">
+                                <img title="Twitter" alt="Twitter" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/twitter-a2f49a8ef4b07b7c21bd4fca6fdefee2500cf893201504d3dca72b4f90345b5c.svg" class="lazyload" />
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" href="https://www.facebook.com/turbologo.ru/" target="_blank">
+                                <img title="Facebook" alt="Facebook" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/facebook-0bd65a33b8aa5767d1246bcab2f1dc8f62dff2c74574fd72feb84df47bcda2f7.svg" class="lazyload" />
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" href="https://www.pinterest.com/turbologo/" target="_blank">
+                                <img title="Pinterest" alt="Pinterest" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/pinterest-2e8b9103c6e1e9442792bccbc673e1e4575c3ef7450f67b3dd57fca9eb2606b3.svg" class="lazyload" />
+                            </a>
+                        </li>
+                        <li>
+                            <a itemprop="sameAs" href="https://dribbble.com/turbologo" target="_blank">
+                                <img title="Dribbble" alt="Dribbble" width="1000" height="1000" data-src="https://assets.turbologo.ru/assets/landing/icons/dribbble-12531908d595f8412b1223002bfb068cf20b7facb50d8c4305f8933983c48cfc.svg" class="lazyload" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <ul class="tl_footer_nav">
+                  <li><a href="https://turbologo.ru/about_us">О нас</a></li>
+                <li><a href="https://turbologo.ru/how-it-works">Как это работает</a></li>
+                <li><a href="https://turbologo.ru/reviews">Отзывы</a></li>
+                <li><a href="https://turbologo.ru/services">Продукты</a></li>
+                <li><a href="https://turbologo.ru/faq">Вопросы и ответы</a></li>
+                  <li><a href="https://turbologo.ru/blog/idei/">Идеи логотипов</a></li>
+                <li><a href="https://turbologo.ru/pricing">Цены</a></li>
+                <li><a href="https://turbologo.ru/affiliate">Партнерская программа</a></li>
+                  <li><a href="/partners">Наши партнеры</a></li>
+
+                  <li><a href="https://turbologo.ru/blog/">Блог</a></li>
+
+                <li><a href="https://turbologo.ru/contacts">Поддержка</a></li>
+                  <li><a href="/agreement.pdf" target="_blank">Согласие на обработку персональных данных</a></li>
+                <li><a href="https://turbologo.ru/terms">Условия использования</a></li>
+
+                    <li><a href="https://turbologo.ru/logo-designs-sitemap">Карта сайта логотипов</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+      </div>
+    </div>
+
+
+    <!-- overlay for wizard -->
+    <div class="master-loading-outer">
+      <div class="master-loading-middle">
+        <div class="master-loading pop" id="close-modal">
+          <span class="message"></span>
+        </div>
+      </div>
+      <div class="master-loading-overlay"></div>
+    </div>
+
+    <div id="logos-not-visible-container" style="position: absolute; top: -1500px; left: -1500px"></div>
+
+
+    <script type="text/javascript">
+
+
+    </script>
+
+      <script src="https://assets.turbologo.ru/assets/application-6c841b18b95fc6935ee434d2f92961a2314cb3262c628697773ffe11d4612d9f.js"></script>
+
+    
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+      });
+    </script>
+
+      <!-- Top100 (Kraken) Counter -->
+<script>
+    (function (w, d, c) {
+    (w[c] = w[c] || []).push(function() {
+        var options = {
+            project: 6436749,
+        };
+        try {
+            w.top100Counter = new top100(options);
+        } catch(e) { }
+    });
+    var n = d.getElementsByTagName("script")[0],
+    s = d.createElement("script"),
+    f = function () { n.parentNode.insertBefore(s, n); };
+    s.type = "text/javascript";
+    s.async = true;
+    s.src =
+    (d.location.protocol == "https:" ? "https:" : "http:") +
+    "//st.top100.ru/top100/top100.js";
+
+    if (w.opera == "[object Opera]") {
+    d.addEventListener("DOMContentLoaded", f, false);
+} else { f(); }
+})(window, document, "_top100q");
+</script>
+<!-- END Top100 (Kraken) Counter -->
+  </body>
+</html>

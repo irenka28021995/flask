@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock%}</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+
+</head>
+
+<style>
+body {background:url("/static/image/200.png");
+    font-family:algerian;
+    font-size:30px;
+}
+a {font-family:GABRIOLA;
+}
+div {
+text-align: -webkit-center;
+}
+.display-4  {font-size:30px;
+font-family:GABRIOLA;
+color:white;
+}
+
+
+.my-0 {font-size:30px;
+color:red;
+font-family:GABRIOLA;
+}
+.text-white {
+  color: white;
+}
+
+
+</style>
+<body>
+<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+          <img src="https://garage.by/img/logo.png" alt="logo">
+      </a>
+        <nav class="d-inline-flex mt-3 mt-md-1 ms-md-auto">
+            <a class="me-3 py-3 text-dark text-decoration-none" href="/"><p class="text-white">Меню</p></a>
+              <a class="me-3 py-3 text-dark text-decoration-none" href="/cafe"><p class="text-white">Наши кафе</p></a>
+            <a class="me-3 py-3 text-dark text-decoration-none" href="/posts"><p class="text-white">Новости</p></a>
+            <a class="me-3 py-3 text-dark text-decoration-none" href="/create-article"><button class="btn btn-info">Добавить запись</button></a>
+        </nav>
+</div>
+{%block body%}{%endblock%}
+</body>
+    <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
+            <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
+              <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+</html>
